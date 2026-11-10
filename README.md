@@ -30,13 +30,32 @@ with a demo on synthetic data, so you can see how each metric reacts to typical 
 
 ## Installation
 
+Requires Python ≥ 3.8. No GPU and no model download needed: everything runs on CPU in a few seconds.
+
+**Windows (PowerShell)**
+
+```powershell
+git clone https://github.com/ingmouhssinechkarka-ctrl/Evaluation-Metrics-for-C.V-Tasks.git
+cd Evaluation-Metrics-for-C.V-Tasks
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1      # if blocked: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+pip install -r requirements.txt
+python run_all.py
+```
+
+**Linux / macOS**
+
 ```bash
 git clone https://github.com/ingmouhssinechkarka-ctrl/Evaluation-Metrics-for-C.V-Tasks.git
 cd Evaluation-Metrics-for-C.V-Tasks
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+python run_all.py
 ```
 
-Requires Python ≥ 3.8 with `numpy`, `scipy` and `matplotlib`.
+The source files contain detailed comments (in French) explaining the concept
+behind every step of each metric.
 
 ## Usage
 
